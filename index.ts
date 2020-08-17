@@ -10,8 +10,8 @@ app.use(
 )
 app.options('*', cors())
 
-app.get('/', (req, res) => res.send('Working!!!'))
+app.get('/', (req, res) => res.send('Working!'))
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('server running on port 3000', '')
+    console.log(`server running on port ${process.env.PORT || 3000}`, '')
 })
